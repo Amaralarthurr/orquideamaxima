@@ -1,0 +1,33 @@
+.contato{
+
+    & .contato-subtitle{
+
+        & .contato-icons{
+
+            & i{
+                color: var(--clr-wine);
+            }
+
+            & i:hover{
+                color: var(--clr-lightWine);
+            }
+        }
+    }
+}
+
+@media (width <= 1920px){
+    .contato{
+        & .contato-subtitle{
+            min-width: 60%;
+        }
+    }
+}
+
+@media (width <= 425px){
+    .contato{
+        & .contato-subtitle{
+            min-width: 90%;
+
+        }
+    }
+}

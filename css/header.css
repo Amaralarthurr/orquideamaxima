@@ -1,0 +1,15 @@
+nav {
+    background-color: var(--clr-wine);
+
+    & img {
+        max-width: 10rem;
+    }
+
+    .fa-circle-user{
+        transition: .1s;
+    }
+
+    .fa-circle-user:hover {
+        color: var(--clr-golden);
+    }
+}

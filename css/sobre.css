@@ -1,0 +1,113 @@
+.sobre-nos {
+    font-family: var(--font-text);
+
+    & .sobre-nos-leftlist {
+        border-right: 1px solid var(--clr-lightBrown);
+    }
+
+    & .sobre-nos-rightlist {
+        border-left: 1px solid var(--clr-lightBrown);
+
+        & h1 {
+            font-size: 6rem;
+        }
+
+
+    }
+}
+
+.blackLine {
+    background-color: var(--clr-lightBlack);
+    width: 3rem;
+    height: 2px;
+    border-radius: 10rem;
+}
+
+@media (width >=2560px) {
+    .sobre-nos {
+
+        .sobre-nos-rightlist {
+
+            & img {
+                min-width: 30%;
+            }
+        }
+    }
+}
+
+@media (width < 2560px) {
+    .sobre-nos {
+
+        .sobre-nos-rightlist {
+
+            & img {
+                min-width: 35%;
+            }
+        }
+    }
+}
+
+
+@media (width <=1024px) {
+    .sobre-nos {
+
+        .sobre-nos-list {
+            flex-direction: column;
+            /* gap: 4rem; */
+        }
+
+        .sobre-nos-leftlist {
+            border-right: none;
+            border-bottom: 2px solid var(--clr-lightBrown);
+            width: 100% !important;
+            gap: 2rem;
+        }
+
+        .sobre-nos-rightlist {
+            border-left: none;
+            border-top: 2px solid var(--clr-lightBrown);
+            width: 100% !important;
+            gap: 2rem;
+
+        }
+
+        .sobre-nos-title {
+            margin-top: 2rem;
+        }
+
+        .sobre-nos-leftlist-p {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media (width <=425px) {
+    .sobre-nos {
+        .sobre-nos-rightlist {
+
+            .sobre-nos-right-imgs {
+                flex-direction: column !important;
+                justify-content: center;
+                align-items: center;
+                & img {
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (width <=328px) {
+    .sobre-nos {
+        .sobre-nos-rightlist {
+
+            & img {}
+
+            .sobre-nos-title {
+                & h1 {
+                    font-size: 4rem !important;
+                }
+            }
+        }
+    }
+}
